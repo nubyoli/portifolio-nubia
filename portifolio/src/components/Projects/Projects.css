@@ -1,0 +1,304 @@
+.projects-section {
+  position: relative;
+  min-height: calc(100vh - 120px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3.5rem 1.5rem 4.5rem;
+  box-sizing: border-box;
+  background-color: var(--bg-base);
+}
+
+.projects-container {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+/* Header */
+.projects-header {
+  text-align: left;
+}
+
+.projects-title-row {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.projects-title {
+  font-family: 'Bricolage Grotesque', sans-serif;
+  font-size: clamp(2rem, 3.5vw, 2.6rem);
+  font-weight: 800;
+  color: var(--text-primary);
+  margin: 0;
+  letter-spacing: -0.02em;
+}
+
+.github-sync-indicator {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.75rem;
+  color: var(--primary-purple);
+  padding: 0.2rem 0.6rem;
+  border-radius: 9999px;
+  background: rgba(124, 58, 237, 0.1);
+  border: 1px solid rgba(124, 58, 237, 0.2);
+}
+
+.projects-subtitle {
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+  margin: 0.35rem 0 0;
+}
+
+/* Carousel */
+.carousel-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.carousel-card-container {
+  width: 100%;
+}
+
+/* Card fiel ao wireframe */
+.project-card {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 2rem;
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: 18px;
+  padding: 1.75rem;
+  box-shadow: var(--card-shadow);
+  transition: border-color 0.2s ease;
+  min-height: 260px;
+}
+
+.project-card:hover {
+  border-color: var(--primary-purple);
+}
+
+/* Slot de Imagem / GIF */
+.project-image-slot {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  border-radius: 14px;
+  background: rgba(20, 16, 28, 0.6);
+  border: 1px dashed rgba(124, 58, 237, 0.35);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.project-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.project-image-placeholder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  color: var(--primary-purple);
+  padding: 1rem;
+  text-align: center;
+}
+
+.placeholder-icon {
+  opacity: 0.8;
+}
+
+.placeholder-text {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  color: var(--text-secondary);
+}
+
+/* Detalhes do Projeto */
+.project-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1.5rem;
+}
+
+.project-details-top {
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+}
+
+.project-heading-block {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.project-name {
+  font-family: 'Bricolage Grotesque', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin: 0;
+}
+
+.project-purpose {
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.86rem;
+  color: var(--text-muted);
+}
+
+/* Tags de Tecnologias Roxas */
+.project-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.project-tech-pill {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.74rem;
+  font-weight: 500;
+  padding: 0.25rem 0.75rem;
+  border-radius: 9999px;
+  color: #c4b5fd;
+  background: rgba(124, 58, 237, 0.12);
+  border: 1px solid rgba(124, 58, 237, 0.35);
+}
+
+/* Descrição */
+.project-description {
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.92rem;
+  line-height: 1.6;
+  color: var(--text-secondary);
+  margin: 0;
+}
+
+/* Links / Ações */
+.project-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+  flex-wrap: wrap;
+}
+
+.project-link-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0.5rem 1.1rem;
+  border-radius: 8px;
+  background: var(--control-bg);
+  border: 1px solid var(--control-border);
+  color: var(--text-primary);
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.84rem;
+  font-weight: 500;
+  text-decoration: none;
+  transition: border-color 0.15s ease, color 0.15s ease;
+}
+
+.project-link-btn:hover {
+  border-color: var(--primary-purple);
+  color: var(--primary-purple);
+}
+
+.project-link-btn.primary {
+  background: var(--primary-purple);
+  border-color: var(--primary-purple);
+  color: #ffffff;
+}
+
+.project-link-btn.primary:hover {
+  background: #6d28d9;
+  border-color: #6d28d9;
+  color: #ffffff;
+}
+
+/* Controles do Carrossel */
+.carousel-controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.25rem;
+  margin-top: 0.5rem;
+}
+
+.carousel-arrow-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: var(--control-bg);
+  border: 1px solid var(--control-border);
+  color: var(--primary-purple);
+  cursor: pointer;
+  transition: border-color 0.15s ease, background-color 0.15s ease;
+}
+
+.carousel-arrow-btn:hover {
+  border-color: var(--primary-purple);
+  background-color: rgba(124, 58, 237, 0.15);
+}
+
+.carousel-pagination {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.carousel-dot {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: var(--control-border);
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  transition: all 0.2s ease;
+}
+
+.carousel-dot.active {
+  width: 24px;
+  border-radius: 9999px;
+  background: var(--primary-purple);
+}
+
+/* Responsividade */
+@media (max-width: 868px) {
+  .project-card {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .project-image-slot {
+    max-width: 220px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 640px) {
+  .projects-section {
+    padding: 2.5rem 1rem 3.5rem;
+  }
+
+  .project-card {
+    padding: 1.25rem;
+  }
+}

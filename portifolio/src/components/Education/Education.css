@@ -1,0 +1,188 @@
+.education-section {
+  position: relative;
+  padding: 4.5rem 1.5rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.section-container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* Section Header */
+.section-header {
+  margin-bottom: 2.75rem;
+  text-align: left;
+}
+
+.section-title-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.76rem;
+  font-weight: 700;
+  color: var(--accent-orange);
+  background: var(--tag-bg);
+  border: 1px solid var(--tag-border);
+  padding: 0.25rem 0.65rem;
+  border-radius: 6px;
+  margin-bottom: 0.75rem;
+  letter-spacing: 1px;
+}
+
+.tag-icon {
+  color: var(--accent-orange);
+}
+
+.section-title {
+  font-family: 'Bricolage Grotesque', sans-serif;
+  font-size: clamp(2rem, 4vw, 2.8rem);
+  font-weight: 800;
+  color: var(--text-primary);
+  margin: 0 0 0.5rem 0;
+  letter-spacing: -0.03em;
+}
+
+.section-subtitle {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  color: var(--text-secondary);
+  margin: 0;
+}
+
+/* Education List */
+.education-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.education-card {
+  position: relative;
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: 18px;
+  box-shadow: var(--card-shadow);
+  overflow: hidden;
+  transition: transform 0.25s cubic-bezier(0.34, 1.56, 0.64, 1), border-color 0.25s ease, box-shadow 0.25s ease;
+  backdrop-filter: blur(10px);
+}
+
+.education-card:hover {
+  border-color: var(--primary-purple);
+}
+
+.education-card-content {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
+  padding: 1.6rem 2rem;
+}
+
+.education-icon-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 12px;
+  background: var(--control-bg);
+  border: 1px solid var(--card-border);
+  color: var(--primary-purple);
+  flex-shrink: 0;
+  transition: border-color 0.2s ease, color 0.2s ease;
+}
+
+.education-card:hover .education-icon-wrapper {
+  border-color: var(--primary-purple);
+}
+
+.education-details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  flex: 1;
+}
+
+.education-meta {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.education-period {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.82rem;
+  color: var(--text-muted);
+}
+
+.meta-icon {
+  color: var(--accent-orange);
+}
+
+.education-badge {
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.72rem;
+  font-weight: 600;
+  padding: 0.2rem 0.6rem;
+  border-radius: 9999px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.status-ongoing {
+  background: rgba(124, 58, 237, 0.15);
+  color: var(--primary-purple);
+  border: 1px solid rgba(124, 58, 237, 0.3);
+}
+
+.status-completed {
+  background: rgba(16, 185, 129, 0.15);
+  color: #10b981;
+  border: 1px solid rgba(16, 185, 129, 0.3);
+}
+
+.education-institution {
+  font-family: 'Bricolage Grotesque', sans-serif;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin: 0;
+  line-height: 1.35;
+}
+
+.education-degree {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+}
+
+.degree-bullet {
+  color: var(--accent-orange);
+  flex-shrink: 0;
+}
+
+@media (max-width: 640px) {
+  .education-card-content {
+    flex-direction: column;
+    padding: 1.25rem;
+    gap: 1rem;
+  }
+
+  .education-institution {
+    font-size: 1.1rem;
+  }
+
+  .education-degree {
+    font-size: 0.88rem;
+  }
+}

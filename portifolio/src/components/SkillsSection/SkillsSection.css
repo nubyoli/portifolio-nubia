@@ -1,0 +1,110 @@
+.skills-section {
+  position: relative;
+  padding: 4.5rem 1.5rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Categories Filter */
+.skills-categories-bar {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin-bottom: 1.75rem;
+}
+
+.cat-btn {
+  background: var(--control-bg);
+  border: 1px solid var(--control-border);
+  color: var(--text-secondary);
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.84rem;
+  font-weight: 500;
+  padding: 0.45rem 1rem;
+  border-radius: 9999px;
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.cat-btn:hover {
+  color: var(--text-primary);
+  border-color: var(--primary-purple);
+  background: var(--nav-hover-bg);
+}
+
+.cat-btn.active {
+  color: #ffffff;
+  background: var(--primary-purple);
+  border-color: var(--primary-purple);
+}
+
+/* Globe Showcase Card */
+.globe-showcase-card {
+  position: relative;
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: 24px;
+  box-shadow: var(--card-shadow);
+  padding: 1.5rem;
+  box-sizing: border-box;
+  overflow: hidden;
+  backdrop-filter: blur(12px);
+  transition: border-color 0.3s ease;
+}
+
+.globe-showcase-card:hover {
+  border-color: var(--primary-purple);
+}
+
+.globe-hint-banner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.65rem 1.25rem;
+  background: var(--badge-bg);
+  border: 1px solid var(--badge-border);
+  border-radius: 12px;
+  margin-bottom: 1.5rem;
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.82rem;
+  color: var(--text-secondary);
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.hint-icon {
+  color: var(--accent-orange);
+}
+
+.skill-counter {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--primary-purple);
+  background: rgba(124, 58, 237, 0.12);
+  padding: 0.2rem 0.6rem;
+  border-radius: 6px;
+}
+
+.globe-viewport {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 640px) {
+  .globe-showcase-card {
+    padding: 1rem 0.5rem;
+  }
+
+  .globe-hint-banner {
+    font-size: 0.75rem;
+    padding: 0.5rem 0.8rem;
+  }
+}
