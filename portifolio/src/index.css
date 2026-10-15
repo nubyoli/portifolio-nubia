@@ -1,0 +1,181 @@
+/* =========================================================
+   PORTFOLIO DESIGN SYSTEM & CSS VARIABLES
+   ========================================================= */
+
+:root {
+  /* Fonts */
+  --font-heading: 'Bricolage Grotesque', sans-serif;
+  --font-body: 'Poppins', sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+
+  /* Color Palette - Dark Theme (Default) */
+  --bg-base: #0E0B16;
+  --bg-surface: #191424;
+  --bg-card: rgba(25, 20, 36, 0.85);
+  --card-bg: rgba(25, 20, 36, 0.85);
+  --card-border: rgba(124, 58, 237, 0.18);
+  --card-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
+
+  --primary-purple: #7C3AED;
+  --primary-purple-glow: rgba(124, 58, 237, 0.15);
+  --accent-orange: #FB923C;
+  --accent-orange-glow: rgba(251, 146, 60, 0.15);
+
+  --text-primary: #F5F3F9;
+  --text-secondary: #B4ACC3;
+  --text-muted: #746C83;
+
+  /* Navbar */
+  --nav-bg: rgba(20, 16, 28, 0.9);
+  --nav-border: rgba(124, 58, 237, 0.2);
+  --nav-hover-bg: rgba(124, 58, 237, 0.1);
+  --nav-divider-color: rgba(180, 172, 195, 0.25);
+  --nav-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
+
+  /* Controls & Badges */
+  --control-bg: rgba(30, 24, 42, 0.85);
+  --control-border: rgba(124, 58, 237, 0.2);
+  --dropdown-bg: #1A1523;
+  --badge-bg: rgba(30, 24, 42, 0.85);
+  --badge-border: rgba(124, 58, 237, 0.2);
+  --tag-bg: rgba(251, 146, 60, 0.08);
+  --tag-border: rgba(251, 146, 60, 0.2);
+
+  /* Code Window */
+  --code-window-bg: rgba(20, 16, 28, 0.95);
+  --code-window-border: rgba(124, 58, 237, 0.2);
+  --code-window-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
+  --code-titlebar-bg: rgba(25, 20, 36, 0.95);
+  --code-body-bg: rgba(16, 13, 23, 0.95);
+  --code-statusbar-bg: rgba(20, 16, 28, 0.95);
+  --code-divider: rgba(124, 58, 237, 0.15);
+  --tab-bg: rgba(33, 28, 39, 0.95);
+  --tab-border: rgba(124, 58, 237, 0.25);
+  --code-text: #E2DEEB;
+  --code-string: #FDBA74;
+
+  /* Hero Glows */
+  --hero-glow-1: rgba(124, 58, 237, 0.18);
+  --hero-glow-2: rgba(251, 146, 60, 0.12);
+
+  /* Skills Globe */
+  --globe-item-bg: #1B1626;
+  --globe-item-border: rgba(124, 58, 237, 0.25);
+  --globe-item-hover-bg: #292038;
+  --globe-label-bg: #7C3AED;
+
+  color-scheme: dark;
+}
+
+/* =========================================================
+   LIGHT THEME OVERRIDES
+   ========================================================= */
+
+[data-theme='light'] {
+  --bg-base: #F8F6FC;
+  --bg-surface: #FFFFFF;
+  --bg-card: #FFFFFF;
+  --card-bg: #FFFFFF;
+  --card-border: rgba(124, 58, 237, 0.14);
+  --card-shadow: 0 4px 14px rgba(0, 0, 0, 0.05);
+
+  --primary-purple: #7C3AED;
+  --primary-purple-glow: rgba(124, 58, 237, 0.12);
+  --accent-orange: #EA580C;
+  --accent-orange-glow: rgba(234, 88, 12, 0.12);
+
+  --text-primary: #181226;
+  --text-secondary: #584F69;
+  --text-muted: #8F86A1;
+
+  /* Navbar */
+  --nav-bg: rgba(255, 255, 255, 0.95);
+  --nav-border: rgba(124, 58, 237, 0.15);
+  --nav-hover-bg: rgba(124, 58, 237, 0.06);
+  --nav-divider-color: rgba(88, 79, 105, 0.2);
+  --nav-shadow: 0 4px 14px rgba(0, 0, 0, 0.05);
+
+  /* Controls & Badges */
+  --control-bg: #FFFFFF;
+  --control-border: rgba(124, 58, 237, 0.15);
+  --dropdown-bg: #FFFFFF;
+  --badge-bg: #FFFFFF;
+  --badge-border: rgba(124, 58, 237, 0.15);
+  --tag-bg: rgba(234, 88, 12, 0.06);
+  --tag-border: rgba(234, 88, 12, 0.18);
+
+  /* Code Window */
+  --code-window-bg: #FFFFFF;
+  --code-window-border: rgba(124, 58, 237, 0.16);
+  --code-window-shadow: 0 4px 14px rgba(0, 0, 0, 0.05);
+  --code-titlebar-bg: #F8F6FC;
+  --code-body-bg: #FCFAFF;
+  --code-statusbar-bg: #F8F6FC;
+  --code-divider: rgba(124, 58, 237, 0.1);
+  --tab-bg: #FFFFFF;
+  --tab-border: rgba(124, 58, 237, 0.18);
+  --code-text: #272036;
+  --code-string: #D97706;
+
+  /* Hero Glows */
+  --hero-glow-1: rgba(124, 58, 237, 0.1);
+  --hero-glow-2: rgba(234, 88, 12, 0.08);
+
+  /* Skills Globe */
+  --globe-item-bg: #FFFFFF;
+  --globe-item-border: rgba(124, 58, 237, 0.18);
+  --globe-item-hover-bg: #F5F2FC;
+  --globe-label-bg: #7C3AED;
+
+  color-scheme: light;
+}
+
+/* =========================================================
+   GLOBAL RESETS & BASE STYLES
+   ========================================================= */
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: var(--font-body);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--bg-base);
+  color: var(--text-primary);
+  font-family: var(--font-body);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  overflow-x: hidden;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-base);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--card-border);
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--primary-purple);
+}
+
+/* Selection */
+::selection {
+  background: var(--primary-purple);
+  color: #ffffff;
+}

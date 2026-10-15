@@ -1,0 +1,441 @@
+/* ============================================================================
+   CONTACT SECTION - MINIMALIST PURPLE WIREFRAME DESIGN
+   ============================================================================ */
+
+.contact-section {
+  position: relative;
+  min-height: calc(100vh - 120px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3.5rem 1.5rem 5rem;
+  box-sizing: border-box;
+  background-color: var(--bg-base);
+}
+
+.contact-container {
+  display: grid;
+  grid-template-columns: 320px 1fr;
+  gap: 2.25rem;
+  width: 100%;
+  max-width: 1100px;
+  align-items: flex-start;
+}
+
+/* ============================================================================
+   COLUNA DA ESQUERDA: CARDS E REDES SOCIAIS
+   ============================================================================ */
+
+.contact-sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.info-card {
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: 14px;
+  padding: 1.25rem 1.4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  box-shadow: var(--card-shadow);
+  transition: border-color 0.2s ease;
+}
+
+.info-card:hover {
+  border-color: var(--primary-purple);
+}
+
+.info-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.info-card-title {
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.info-card-icon {
+  color: var(--primary-purple);
+}
+
+.info-card-value {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.88rem;
+  font-weight: 500;
+  color: var(--text-primary);
+  text-decoration: none;
+  word-break: break-all;
+  transition: color 0.15s ease;
+}
+
+.info-card-value:hover {
+  color: var(--primary-purple);
+}
+
+.location-text {
+  color: var(--text-primary);
+}
+
+/* 4 Quadrados Sociais */
+.social-squares-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.85rem;
+  margin-top: 0.25rem;
+}
+
+.social-square {
+  aspect-ratio: 1 / 1;
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--primary-purple);
+  text-decoration: none;
+  transition: border-color 0.2s ease, background-color 0.2s ease, color 0.2s ease;
+}
+
+.social-square:hover {
+  border-color: var(--primary-purple);
+  color: #ffffff;
+  background-color: rgba(124, 58, 237, 0.18);
+}
+
+/* ============================================================================
+   COLUNA DA DIREITA: EDITOR DE CÓDIGO TYPESCRIPT
+   ============================================================================ */
+
+.contact-editor-column {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.editor-window {
+  background: var(--code-window-bg);
+  border: 1px solid var(--code-window-border);
+  border-radius: 16px;
+  box-shadow: var(--card-shadow);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: border-color 0.2s ease;
+}
+
+.editor-window:hover {
+  border-color: var(--primary-purple);
+}
+
+/* Barra de Abas */
+.editor-tab-bar {
+  display: flex;
+  align-items: center;
+  background: var(--code-titlebar-bg);
+  border-bottom: 1px solid var(--code-divider);
+  padding: 0.4rem 0.75rem 0;
+}
+
+.editor-tab {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.45rem 0.95rem;
+  background: var(--code-body-bg);
+  border: 1px solid var(--code-divider);
+  border-bottom: none;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.8rem;
+  color: var(--text-primary);
+}
+
+.tab-lang-badge {
+  background: #3178c6;
+  color: #ffffff;
+  font-size: 0.65rem;
+  font-weight: 700;
+  padding: 0.1rem 0.35rem;
+  border-radius: 4px;
+}
+
+.tab-title {
+  font-weight: 500;
+}
+
+.tab-close-icon {
+  color: var(--text-muted);
+  font-size: 1rem;
+  line-height: 1;
+  cursor: pointer;
+}
+
+/* Corpo Interno do Editor */
+.editor-window-inner {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  background: var(--code-body-bg);
+}
+
+/* Cabeçalho de Metadados dentro do Editor */
+.editor-meta-header {
+  border-bottom: 1px solid var(--code-divider);
+  padding-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+}
+
+.meta-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.8rem;
+}
+
+.meta-label-box {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+  color: var(--accent-orange);
+  font-weight: 600;
+}
+
+.meta-icon-purple {
+  color: var(--accent-orange);
+}
+
+.meta-compose-title {
+  letter-spacing: -0.2px;
+}
+
+.meta-tag-secure {
+  color: var(--text-muted);
+  font-size: 0.75rem;
+}
+
+.meta-recipient {
+  color: var(--text-secondary);
+}
+
+.meta-prefix {
+  color: var(--text-muted);
+}
+
+.meta-recipient-address {
+  color: var(--accent-orange);
+  font-weight: 600;
+}
+
+.meta-response {
+  color: var(--text-secondary);
+}
+
+.meta-response-highlight {
+  color: var(--primary-purple);
+  font-weight: 600;
+}
+
+/* ============================================================================
+   FORMULÁRIO
+   ============================================================================ */
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.form-row-two-cols {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.form-label {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  letter-spacing: 0.5px;
+}
+
+.form-input,
+.form-textarea {
+  width: 100%;
+  box-sizing: border-box;
+  background: var(--control-bg);
+  border: 1px solid var(--control-border);
+  border-radius: 8px;
+  padding: 0.65rem 0.85rem;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.82rem;
+  color: var(--text-primary);
+  transition: border-color 0.2s ease;
+  outline: none;
+}
+
+.form-input:focus,
+.form-textarea:focus {
+  border-color: var(--primary-purple);
+}
+
+.form-input::placeholder,
+.form-textarea::placeholder {
+  color: var(--text-muted);
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.8rem;
+}
+
+.form-textarea {
+  resize: vertical;
+  min-height: 110px;
+  line-height: 1.5;
+}
+
+/* Nota de Rodapé */
+.editor-footer-note {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  padding-top: 0.25rem;
+}
+
+/* Banners de Feedback */
+.feedback-banner {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.7rem 1rem;
+  border-radius: 8px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.82rem;
+  font-weight: 500;
+}
+
+.feedback-banner.success {
+  background: rgba(16, 185, 129, 0.12);
+  border: 1px solid rgba(16, 185, 129, 0.35);
+  color: #10b981;
+}
+
+.feedback-banner.error {
+  background: rgba(239, 68, 68, 0.12);
+  border: 1px solid rgba(239, 68, 68, 0.35);
+  color: #ef4444;
+}
+
+/* Botão de Envio */
+.form-action-row {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.send-message-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  background-color: var(--primary-purple);
+  border: 1px solid var(--primary-purple);
+  color: #ffffff;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  padding: 0.7rem 1.4rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.15s ease, border-color 0.15s ease;
+}
+
+.send-message-btn:hover:not(:disabled) {
+  background-color: #6D28D9;
+  border-color: #6D28D9;
+}
+
+.send-message-btn:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.spinner {
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* ============================================================================
+   RESPONSIVIDADE
+   ============================================================================ */
+
+@media (max-width: 968px) {
+  .contact-container {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .contact-sidebar {
+    max-width: 520px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .contact-editor-column {
+    max-width: 680px;
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 640px) {
+  .contact-section {
+    padding: 2.5rem 1rem 4rem;
+  }
+
+  .form-row-two-cols {
+    grid-template-columns: 1fr;
+  }
+
+  .editor-window-inner {
+    padding: 1.1rem;
+  }
+
+  .meta-row {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .social-squares-grid {
+    gap: 0.6rem;
+  }
+}
